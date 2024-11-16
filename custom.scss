@@ -1,49 +1,6 @@
-.reveal h1 {font-size: 1.5em; text-transform: capitalize; text-shadow: 1px 1px 2px white;}
+/*-- scss:defaults --*/
 
-.reveal h2 {font-size: 1.2em; text-transform: capitalize;
-    text-shadow: 1px 1px 2px white;}
-
-.reveal h3 {font-size: 0.6em; text-transform: capitalize;}
-
-.reveal h4 {font-size: 0.4em; text-transform: capitalize;}
-
-.slides em {
-    color:#e99a24;
-    font-style: normal;
-}
-
-.reveal .slide-number {
-    font-size: 0.4em;
-}
-
-.citation {
-    font-size: 0.6em;
-}
-
-.csl-entry {
-    text-align: left;
-    font-size: 0.6em;
-}
-
-.slides {
-    font-size: 0.75em;
-}
-.reveal ul {
-    display: block;
-}
-.reveal ol {
-    display: block;
-}
-
-/* enable multiple columns */
-/* https://stackoverflow.com/questions/30861845 */
-.container {
-    display: flex;
-    align-items: center;
-}
-.col {
-    flex: auto;
-}
+/*-- scss:rules --*/
 
 .box-def {
     border: 4px solid #555555;
@@ -106,9 +63,4 @@
 .box-red-title p {
     margin: 0;
     padding: 0;
-}
-
-#refs {
-    height: 800px;
-    overflow-y: auto !important;
 }

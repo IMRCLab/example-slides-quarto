@@ -1,20 +1,19 @@
 ---
 title: Slide Examples
-subtitle: Pandoc revealjs
+subtitle: Quarto revealjs
 author: Wolfgang Hönig
-date: June, 2024
+date: November, 2024
 
-theme: black # white
+bibliography: references.bib
 
+format:
+  revealjs: 
+    theme: custom.scss
+
+theme: default # dark, default
 title-slide-attributes:
-    data-background-image: media/title_dark.svg
+    data-background-image: media/title_white.svg # media/title_dark.svg
     data-background-size: contain
-
-minScale: 0.2
-maxScale: 10.0
-slideNumber: true
-navigationMode: 'linear'
-controls: false
 ---
 
 # Layout
@@ -33,27 +32,27 @@ controls: false
 
 ## Columns
 
-::: {.container}
-:::: {.col}
+::: {.columns}
+:::: {.column width="50%"}
 Column 1  
 abc
 ::::
-:::: {.col}
+:::: {.column width="50%"}
 Column 2  
 abc
 ::::
 :::
 
 
-::: {.container}
-:::: {.col}
+::: {.columns}
+:::: {.column width="30%"}
 Column a  
 abc
 ::::
-:::: {.col}
+:::: {.column width="30%"}
 Column b
 ::::
-:::: {.col}
+:::: {.column width="30%"}
 Column c  
 abc
 ::::

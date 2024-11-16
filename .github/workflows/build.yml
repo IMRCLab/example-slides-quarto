@@ -18,15 +18,14 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
       
-      - name: Install pandoc
+      - name: Install quarto
         run: |
-          wget https://github.com/jgm/pandoc/releases/download/3.2/pandoc-3.2-1-amd64.deb
-          sudo dpkg -i pandoc-3.2-1-amd64.deb
+          wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.36/quarto-1.6.36-linux-amd64.deb
+          sudo dpkg -i quarto-1.6.36-linux-amd64.deb
 
-      - name: Create pandoc slides
+      - name: Create slides
         run: |
-          chmod +x run-pandoc.sh
-          ./run-pandoc.sh --embed-resources --standalone
+          quarto slides.qmd
 
       - name: Convert revealjs slides to pdf
         run: |
@@ -39,5 +38,6 @@ jobs:
           path: |
             **/*.pdf
             **/*.html
-            !**/images/**
+            slides_files/**
+            media/**
           if-no-files-found: error

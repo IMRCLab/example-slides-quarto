@@ -1,1 +1,0 @@
-pandoc --citeproc --bibliography *.bib --css custom.css --mathjax -s -t revealjs slides.md -o slides.html $@
