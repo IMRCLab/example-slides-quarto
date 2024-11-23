@@ -1,0 +1,22 @@
+---
+title: Slide Examples
+subtitle: Quarto revealjs
+author: Wolfgang Hönig
+date: November, 2024
+
+format:
+  revealjs: 
+    theme: media/custom.scss
+
+theme: default # dark, default
+title-slide-attributes:
+    data-background-image: media/title_white.svg # media/title_dark.svg
+    data-background-size: contain
+---
+
+# Section 1
+
+## Lists
+
+- Item1
+- Item2

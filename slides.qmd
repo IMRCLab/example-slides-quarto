@@ -8,11 +8,11 @@ bibliography: references.bib
 
 format:
   revealjs: 
-    theme: custom.scss
+    theme: media/custom.scss
 
-theme: default # dark, default
+theme: dark # dark, default
 title-slide-attributes:
-    data-background-image: media/title_white.svg # media/title_dark.svg
+    data-background-image: media/title_white.svg
     data-background-size: contain
 ---
 
@@ -104,18 +104,20 @@ $$
 
 ## Video
 
-```{=html}
-<video data-autoplay src="media/cubic-bezier.mp4"></video>
-```
+{{< video media/cubic-bezier.mp4 >}}
+
 
 <!-- Full screen video (Version 1)-->
-## {data-background-video="media/cubic-bezier.mp4"}
+## {background-video="media/cubic-bezier.mp4"}
 <!-- Full screen video (Version 2)-->
 ## 
 
-```{=html}
-<video data-autoplay src="media/cubic-bezier.mp4" width="100%"></video>
-```
+{{< video media/cubic-bezier.mp4 width="100%" >}}
+
+## YouTube Example
+
+{{< video https://www.youtube-nocookie.com/embed/Rkj1_gwrtAg?rel=0&autoplay=1&mute=1&start=30 >}}
+
 ## Source Code
 
 ```python

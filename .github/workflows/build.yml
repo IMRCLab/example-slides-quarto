@@ -26,10 +26,12 @@ jobs:
       - name: Create slides
         run: |
           quarto render slides.qmd
+          quarto render slides2.qmd
 
       - name: Convert revealjs slides to pdf
         run: |
           docker run --user root --rm -t -v `pwd`:/slides astefanutti/decktape slides.html slides.pdf
+          docker run --user root --rm -t -v `pwd`:/slides astefanutti/decktape slides2.html slides2.pdf
 
       - name: Upload PDFs
         uses: actions/upload-artifact@v4
