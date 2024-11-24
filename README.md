@@ -14,6 +14,7 @@ Develop locally using VSCode and use the quarto extension. Make sure to enable "
 * F - full screen
 * S - speaker view (requires live server)
 * ESC - slide overview (and ending fullscreen, typically)
+* Q - enable virtual laser pointer
 
 ## Convert to PDF
 
@@ -24,3 +25,9 @@ docker run --rm -t -v `pwd`:/slides astefanutti/decktape slides.html slides.pdf
 ## References
 
 * https://quarto.org/docs/presentations/revealjs/
+
+### Pointer
+
+``
+quarto add quarto-ext/pointer
+``

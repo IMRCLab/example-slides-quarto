@@ -7,6 +7,8 @@ date: November, 2024
 format:
   revealjs: 
     theme: media/custom.scss
+revealjs-plugins:
+  - pointer
 
 theme: default # dark, default
 title-slide-attributes:
