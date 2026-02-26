@@ -2,18 +2,24 @@
 title: Slide Examples
 subtitle: Quarto revealjs
 author: Wolfgang Hönig
-date: November, 2024
+date: February, 2026
+date-format: medium
 
 bibliography: references.bib
 
 format:
   revealjs: 
     theme: [dark, media/custom.scss]
+    slideNumber: 'c'
+    auto-play-media: true
+    # smaller: true
+    hash-type: 'number'
+    hash-one-based-index: true
 revealjs-plugins:
   - pointer
 
 title-slide-attributes:
-    data-background-image: media/title_white.svg
+    data-background-image: media/title_dark.svg
     data-background-size: contain
 ---
 
@@ -73,7 +79,7 @@ text
 :::
 
 ::: {.box-def}
-Normal block without title
+Normal block without title2
 :::
 
 ::: {.box-ex}
@@ -218,9 +224,9 @@ Great robotics books [@springerHandbook; @lavallePlanningBook]
 
 # Appendix
 
-## References
+## References {style="font-size: 0.53em;"}
 
-::: {#refs}
+::: {#refs style="column-count: 2; column-gap: 2em;"}
 :::
 
 ## Appendix

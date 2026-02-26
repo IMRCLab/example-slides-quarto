@@ -2,17 +2,22 @@
 title: Slide Examples
 subtitle: Quarto revealjs
 author: Wolfgang Hönig
-date: November, 2024
+date: February, 2026
+date-format: medium
 
 format:
   revealjs: 
-    theme: media/custom.scss
+    theme: [white, media/custom.scss]
+    slideNumber: 'c'
+    auto-play-media: true
+    # smaller: true
+    hash-type: 'number'
+    hash-one-based-index: true
 revealjs-plugins:
   - pointer
 
-theme: default # dark, default
 title-slide-attributes:
-    data-background-image: media/title_white.svg # media/title_dark.svg
+    data-background-image: media/title_white.svg
     data-background-size: contain
 ---
 
